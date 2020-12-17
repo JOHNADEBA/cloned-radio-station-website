@@ -1,38 +1,334 @@
 .App {
+  /* text-align: center; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main-header {
+  background: rgb(248, 196, 23);
+}
+.location {
+  position: absolute;
+  top: 90px;
+  left: 395px;
+  width: 20%;
+  background-color: green;
+  list-style: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.location li {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.location li:hover {
+  opacity: 0.5;
+}
+.up {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.up-left,
+.up-right {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.up-left1 img {
+  width: 200px;
+  margin-right: 25px;
+}
+.up-left2 {
+  margin-left: 15px;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.up-left2 i:first-child {
+  padding-left: 19px;
+}
+.up-left2 i {
+  font-size: 19px;
+}
+.up-right1 h3 {
+  color: #eee;
+  font-size: 15px;
+  margin: 0;
+  text-align: right;
+}
+.up-right1 p {
+  text-align: right;
+  margin-top: 0;
+  line-height: 0;
+}
+.up-right1 h4 {
+  text-align: right;
+  font-weight: 500;
+  cursor: pointer;
+}
+.up-right1 h4:hover {
+  text-decoration: underline;
+}
+.up-right2 {
+  position: relative;
+}
+.up-right2 img {
+  width: 120px;
+  border-radius: 10px;
+}
+.up-right2 i {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  right: -22px;
+  cursor: pointer;
+}
+.down ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.down ul li {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.down ul li:hover {
+  background: rgb(70, 70, 2);
+  border-radius: 4px;
+}
+
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgb(221, 218, 218);
+
+  /* position: absolute;
+  left: 0;
+  bottom: 0; */
+}
+.scale {
+  position: relative;
+}
+.socials {
+  font-size: 40px;
+  color: green;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  left: 40%;
+}
+.socials i {
+  background: #fff;
+  margin-right: 25px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.divid {
+  padding-top: 65px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mid ul {
+  list-style: none;
+}
+.mid ul li {
+  padding: 10px;
   text-align: center;
+  cursor: pointer;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mid ul li:hover {
+  text-decoration: underline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.note {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  color: red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foot {
+  background: rgb(248, 196, 23);
+  padding: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+.down2 {
+  display: none;
+}
+.listen {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.listen-left {
+  width: 45%;
+}
+.listen-left img {
+  width: 350px;
+  margin-right: 25px;
+}
+.listen-left2 {
+  width: 60%;
+  padding: 10px;
+  background: rgb(90, 165, 90);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+.stop i {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.volume i {
+  color: #fff;
+  cursor: pointer;
+  padding-right: 5px;
+}
+.listen-right {
+  width: 45%;
+}
+.listen-right-h3 {
+  background: rgb(90, 165, 90);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.header {
+  display: flex;
+}
+.header2 {
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: top;
+}
+.h3 {
+  background: none;
+  color: rgb(248, 196, 23);
+  margin-bottom: 0;
+  line-height: 0;
+}
+.header p {
+  margin-top: 0;
+  line-height: 0;
+}
+.mob img {
+}
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .location {
+    position: absolute;
+    top: 90px;
+    left: 280px;
+    width: 45%;
+    border-radius: 10px;
+  }
+  .up-left {
+    width: 80%;
+  }
+
+  .up-right {
+    display: none;
+  }
+
+  .down {
+    display: none;
+  }
+
+  .downmobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: green;
+    transition: 1.5s ease-in-out;
+    z-index: 1;
+  }
+  .downmobile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+  }
+  .downmobile ul li {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px;
+    /* text-align: center; */
+  }
+  .downmobile ul li:hover {
+    opacity: 0.5;
+  }
+  .down2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .down2-1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .down2-1 i {
+    background: #000;
+    color: rgb(248, 196, 23);
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 8px;
+  }
+  .down2-1 h3 {
+    padding-left: 5px;
+    font-weight: 500;
+  }
+  .listen {
+    margin-bottom: 0;
+  }
+  .listen:hover {
+    color: blue;
+  }
+
+  /* footer {
+    display: none;
+  } */
+}
+.up-left2 ul {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.up-left2:hover ul {
+  display: block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.scale {
+  position: relative;
+}
+.socials {
+  right: 35px;
+}
+.mob {
+  width: 40%;
 }

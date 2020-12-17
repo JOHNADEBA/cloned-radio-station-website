@@ -1,24 +1,55 @@
-import logo from './logo.svg';
+import Header from './components/Header'
+import Home from './components/Home'
+import News from './components/News'
+import Presenters from './components/Presenters'
+import Podcasts from './components/Podcasts'
+import Contact from './components/Contact'
+import Listen from './components/Listen'
+import Footer from './components/Footer'
+import 'tachyons'
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
+
 import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Header />
+
+    <Switch>
+        <Route path="/abuja">
+          <Home />          
+        </Route>
+        <Route path="/portharcourt">
+          <Home />
+        </Route>
+        <Route path="/news">
+          <News />
+        </Route>
+        <Route path="/podcast">
+          <Podcasts />
+        </Route>
+        <Route path="/presenters">
+          <Presenters />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+          </Route>
+        <Route path="/listen">
+          <Listen />
+        </Route>
+        
+        <Route path="/">
+          <Home />
+        </Route>
+    </Switch>
+
+    <Footer />
     </div>
+    </Router>
   );
 }
 
