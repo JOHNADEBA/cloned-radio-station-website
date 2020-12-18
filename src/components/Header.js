@@ -69,10 +69,20 @@ const Header = ()=>{
     time = '3:00pm - 4:00pm'
     name = 'HARD FACTS'
 
+  }else if(hour > 16 && hour <=19){
+    image = 'https://picsum.photos/200'
+    time = '4:30pm - 7:00pm'
+    name = 'HARD FACTS'
+
+  }else if(hour > 19 && hour <=22){
+    image = 'https://picsum.photos/200'
+    time = '7:00pm - 10:00pm'
+    name = 'GAME ON'
+
   }else {
     image = 'https://picsum.photos/200'
-    time = 'Midnight - 3:00am'
-    name = 'Chat StationSSS'
+    time = 'Chilling time'
+    name = 'Chilling...'
 
   }
 
