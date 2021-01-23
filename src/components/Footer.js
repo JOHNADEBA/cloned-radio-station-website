@@ -3,9 +3,9 @@ const Footer = ()=>{
         <footer>
             <div className='scale '>
                 <div className='socials'>                   
-                   <a className="no-underline green" href='https://www.facebook.com/'> <i className="shadow-5 grow fab fa-facebook"></i> </a>
-                   <a className="no-underline green" href='https://www.twitter.com/'> <i className="shadow-5 grow fab fa-twitter"></i> </a>
-                   <a className="no-underline green" href='https://www.instagram.com/'> <i className="shadow-5 grow fab fa-instagram"></i> </a>               
+                   <a className=" v no-underline green" href='https://www.facebook.com/'> <i className="shadow-5 grow fab fa-facebook"></i> </a>
+                   <a className=" v no-underline green" href='https://www.twitter.com/'> <i className="shadow-5 grow fab fa-twitter"></i> </a>
+                   <a className="v no-underline green" href='https://www.instagram.com/'> <i className="shadow-5 grow fab fa-instagram"></i> </a>               
                 </div>
             </div>
 

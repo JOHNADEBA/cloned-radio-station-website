@@ -1,10 +1,9 @@
 import logo from './logo.png'
-import collins from './collins.png';
 import { useState } from 'react';
 
 
    
-    const News = ({})=>{
+    const News = ({name, time, image})=>{
     const [logic, setLogic] = useState({word: 'Phone', no:'746464646'})
     
     setTimeout(() => {
@@ -15,11 +14,11 @@ import { useState } from 'react';
                   
     }, 5000);
     return(
-        <div className='listen'>
+        <div className='listen fo '>
             <div className='listen-left'>
                 <img src={logo} alt='logo' />
                 <div className='listen-left2'>
-                    <div className='stop'>
+                    <div className='stop pb'>
                         <i class="fas fa-stop"></i>
                     </div>
 
@@ -34,13 +33,13 @@ import { useState } from 'react';
             <div className='listen-right'>
                 <h3 className='listen-right-h3'>On Air</h3>
                 <div className='header'>
-                    <img src='https://picsum.photos/200' alt='collins'/>
+                    <img src={image} alt='collins'/>
                    <div className='header2'>
-                       <h3 className='h3'>GAME ON</h3>
-                        <p>19:00-22:00</p>
+                       <h3 className='h3'>{name}</h3>
+                        <p>{time}</p>
                     </div> 
                 </div>
-                <p><span className='b green'>{logic.word}</span>: {logic.no}</p>
+                <p className='sms'><span className='b green'>{logic.word}</span>: {logic.no}</p>
             </div>
         </div>
     )

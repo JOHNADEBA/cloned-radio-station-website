@@ -61,6 +61,12 @@
 .up-left2 i {
   font-size: 19px;
 }
+.up-left2 ul {
+  display: none;
+}
+.up-left2:hover ul {
+  display: block;
+}
 .up-right1 h3 {
   color: #eee;
   font-size: 15px;
@@ -232,7 +238,27 @@ footer {
   margin-top: 0;
   line-height: 0;
 }
+.mob {
+  width: 200px;
+  height: 400px;
+}
 .mob img {
+  width: 100%;
+}
+.btn {
+  border: none;
+  padding: 0.3rem;
+  font-size: 0.7rem;
+  border-radius: 0.9rem;
+}
+.btn:hover {
+  background-color: rgb(118, 162, 243);
+  color: #fff;
+}
+.btn:focus {
+  outline: 0;
+  background-color: green;
+  color: #fff;
 }
 @media only screen and (max-width: 768px) {
   body {
@@ -265,7 +291,7 @@ footer {
     width: 40%;
     height: 100vh;
     background-color: green;
-    transition: 1.5s ease-in-out;
+    transition: transform 1.5s ease-in-out;
     z-index: 1;
   }
   .downmobile ul {
@@ -311,24 +337,45 @@ footer {
   .listen:hover {
     color: blue;
   }
+  .listen-left2 {
+    display: flex;
+    flex-direction: column;
 
-  /* footer {
+    width: 150px;
+  }
+  .pb {
+    padding-bottom: 0.5rem;
+  }
+
+  .up-left2 ul {
     display: none;
-  } */
-}
-.up-left2 ul {
-  display: none;
+  }
+
+  .up-left2:hover ul {
+    display: block;
+  }
+  .scale {
+    position: relative;
+  }
+  .socials {
+    display: flex;
+    margin-left: -5rem;
+  }
+
+  .imge {
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .fo {
+    padding-bottom: 0.5rem;
+  }
 }
 
-.up-left2:hover ul {
-  display: block;
-}
-.scale {
-  position: relative;
-}
-.socials {
-  right: 35px;
-}
-.mob {
-  width: 40%;
+@media only screen and (min-width: 1024px) {
+  .fo {
+    padding-bottom: 24.5rem;
+  }
 }

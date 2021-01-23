@@ -14,7 +14,7 @@ const Podcasts = ()=>{
                 <input className='pa2 br3' type='text' placeholder='Search'
                 onChange={(e)=>setQuery(e.target.value)}/>
             </div>
-            <div className='news-details ml5'>
+            <div className='news-details tc'>
                
                 {filt.map((story, id) => {
                 return <New key ={id} {...story} />
